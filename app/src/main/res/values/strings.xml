@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Firebase Authentication Basic</string>
+
+    <string name="login_email">Email</string>
+    <string name="login_password">Password</string>
+    <string name="login_login">Login</string>
+    <string name="login_signup">Sign Up</string>
+    <string name="login_logout">Logout</string>
+
+    <string name="toast_sign_in_successful">Sign In Successful</string>
+    <string name="str_enter_credentials">Please enter email and password</string>
+    <string name="str_authentication_failed">Authentication failed</string>
+    <string name="str_registration_successful">Registration successful</string>
+    <string name="sign_in">Logging in</string>
+    <string name="str_welcome">"Welcome "</string>
+    <string name="str_creating_account">Creating account</string>
+</resources>
