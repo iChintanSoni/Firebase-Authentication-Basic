@@ -21,16 +21,18 @@ android {
 
 def SUPPORT_LIBRARY_VERSION = "24.0.0"
 def BUTTERKNIFE_LIBRARY_VERSION = "8.1.0"
-def PLAY_SERVICE_LIBRARY_VERSION = "9.0.2"
+def PLAY_SERVICE_LIBRARY_VERSION = "9.2.0"
+def GLIDE_LIBRARY_VERSION = "3.7.0"
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:24.0.0'
-    compile 'com.google.firebase:firebase-auth:9.0.2'
-    compile "com.google.android.gms:play-services-auth:$PLAY_SERVICE_LIBRARY_VERSION"
     compile "com.android.support:design:$SUPPORT_LIBRARY_VERSION"
     compile "com.jakewharton:butterknife:$BUTTERKNIFE_LIBRARY_VERSION"
     apt "com.jakewharton:butterknife-compiler:$BUTTERKNIFE_LIBRARY_VERSION"
+    compile "com.android.support:appcompat-v7:$SUPPORT_LIBRARY_VERSION"
+    compile "com.google.firebase:firebase-auth:$PLAY_SERVICE_LIBRARY_VERSION"
+    // Glide: Image Loading Library
+    compile "com.github.bumptech.glide:glide:$GLIDE_LIBRARY_VERSION"
 }
 
 apply plugin: 'com.google.gms.google-services'

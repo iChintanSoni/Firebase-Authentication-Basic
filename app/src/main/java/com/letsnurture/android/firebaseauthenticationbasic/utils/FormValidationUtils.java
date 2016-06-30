@@ -38,4 +38,10 @@ public class FormValidationUtils {
         }
         editText.setError(errorMessage);
     }
+
+    public static void clearForm(EditText... editTexts) {
+        for (EditText editText : editTexts) {
+            editText.setText("");
+        }
+    }
 }
