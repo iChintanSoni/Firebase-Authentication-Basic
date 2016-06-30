@@ -53,7 +53,7 @@ public class ProfileActivity extends BaseAppCompatActivity {
     }
 
     @OnClick(R.id.iv_profile)
-    protected void onProfilePicClick(View view) {
+    void onProfilePicClick(View view) {
         if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED)
             ActivityCompat.requestPermissions(this, new String[]{android.Manifest.permission.READ_EXTERNAL_STORAGE}, PERMISSION_READ_EXTERNAL_STORAGE);
         else {
@@ -96,6 +96,8 @@ public class ProfileActivity extends BaseAppCompatActivity {
     @OnClick(R.id.btn_profile)
     void onUpdateProfileClick() {
 
+        FormValidationUtils.clearErrors(mEditText);
+
         if (FormValidationUtils.isBlank(mEditText)) {
             FormValidationUtils.setError(null, mEditText, "Please enter your display name");
             return;
@@ -119,5 +121,15 @@ public class ProfileActivity extends BaseAppCompatActivity {
                         }
                     }
                 });
+    }
+
+    @OnClick(R.id.btn_profile_change_email)
+    void onChangeEmailClick() {
+        startActivity(new Intent(this, ChangeEmailActivity.class));
+    }
+
+    @OnClick(R.id.btn_profile_change_password)
+    void onChangePasswordClick() {
+        startActivity(new Intent(this, ChangePasswordActivity.class));
     }
 }

@@ -23,6 +23,14 @@
         android:gravity="center"
         tools:text="Display Name: " />
 
+    <TextView
+        android:id="@+id/tv_home_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:gravity="center"
+        tools:text="Email: " />
+
     <Button
         android:id="@+id/btn_home_update_profile"
         android:layout_width="wrap_content"

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="Please Re-Authenticate"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/et_dialog_reauthenticate_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:hint="enter email" />
+
+    <EditText
+        android:id="@+id/et_dialog_reauthenticate_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:hint="enter password" />
+
+    <Button
+        android:id="@+id/btn_dialog_reauthenticate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:text="Re-authenticate" />
+
+    <Button
+        android:id="@+id/btn_dialog_reauthenticate_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:text="Cancel" />
+
+</LinearLayout>

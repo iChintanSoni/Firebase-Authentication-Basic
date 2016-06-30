@@ -33,6 +33,14 @@
             android:name=".ProfileActivity"
             android:label="Profile"
             android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".ChangeEmailActivity"
+            android:label="Change Email"
+            android:parentActivityName=".ProfileActivity" />
+        <activity
+            android:name=".ChangePasswordActivity"
+            android:label="Change Password"
+            android:parentActivityName=".ProfileActivity" />
     </application>
 
 </manifest>

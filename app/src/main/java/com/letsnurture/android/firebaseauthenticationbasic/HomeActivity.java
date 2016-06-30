@@ -15,6 +15,9 @@ public class HomeActivity extends BaseAppCompatActivity {
     @BindView(R.id.tv_home)
     TextView mTextView;
 
+    @BindView(R.id.tv_home_email)
+    TextView mTextViewEmail;
+
     @BindView(R.id.iv_home)
     ImageView mImageView;
 
@@ -28,6 +31,7 @@ public class HomeActivity extends BaseAppCompatActivity {
                     .load(firebaseUser.getPhotoUrl())
                     .into(mImageView);
             mTextView.setText("Display Name: " + firebaseUser.getDisplayName());
+            mTextViewEmail.setText("Email: " + firebaseUser.getEmail());
         }
     }
 
